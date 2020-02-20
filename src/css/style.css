@@ -68,12 +68,13 @@ body, * {
 }
 
 #slogan {
-    max-width: 40%;
     text-align: center;
     text-shadow: 0px 2px 6px black;
-    margin: 35vh 30%;
     color: white;
     font-weight: lighter;
+    margin: 0px;
+    padding: 35vh 30% 0px 30%;
+    overflow-y: hidden;
 }
 
 #foot1 {
