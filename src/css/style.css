@@ -47,7 +47,7 @@ body, * {
 
 #pg1 {
     background-color: var(--color-dark);
-    background-image: url(src/img/bg1.png);
+    background-image: url(/src/img/bg1.png);
     background-size: cover;
     background-position-y: center;
     background-position-x: center;
@@ -134,7 +134,7 @@ body, * {
 /**************************PAG3**************************/
 #pg3
 {
-    background-image: url(src/img/nosotros.jpg);
+    background-image: url(/src/img/nosotros.jpg);
     background-position: center;
     background-size: cover;
 }
