@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Boxell</title>
@@ -34,8 +36,12 @@
         <nav style="margin: 0px 1.5%;" class="navbar navbar-dark ">
             <span class="navbar-brand titulo ">BO<span class="verde">X</span>ELL</span>
             <span class="navbar-text">
-                <small class="links">¿Quienes somos?</small>
-                <small class="links">Contacto</small>
+                <a style="text-decoration: none;" href="#pg3">
+                    <small class="links linkserv">¿Quienes somos?</small>
+                </a>
+                <a style="text-decoration: none;" href="#pg4">
+                    <small class="links linkserv">Contacto</small>
+                </a>
             </span>
         </nav>
 
@@ -44,7 +50,7 @@
 
         <div id="foot1">
             <a style="text-decoration: none; color: white;" href="#pg2">
-                <small>SERVICIOS</small>
+                <small class="linkserv">SERVICIOS</small>
             </a>
             <p><b>v</b></p>
         </div>
@@ -100,20 +106,107 @@
                 desarrollo y crecimiento tecnologico
             </p>
         </div>
-        <div class="col-6 " style="padding: 20vh 10% 20vh 3%; color: white;">
+        <div class="col-6 " style="padding: 25vh 10% 0px 3%; color: white;">
 
             <div id="mision">
-                <h2  class="subverde textos">Mision</h2>
-                <p class="textos">Utilizar la tecnología como fuente de crecimiento y desarrollo empresarial brindando a nuestros clientes servicios de calidad que ayuden a impulsar sus negocios.</p>
+                <h2 class="subverde textos">Mision</h2>
+                <p class="textos">Utilizar la tecnología como fuente de crecimiento y desarrollo empresarial brindando a
+                    nuestros clientes servicios de calidad que ayuden a impulsar sus negocios.</p>
             </div>
             <div id="vision">
-                <h2 class=" subverde textos">Vision</h2>
-                <p class="textos">Facilitar al Perú a sus emprendedores un crecimiento empresarial usando como principal herramienta la tecnología.</p>
+                <h2 class="subverde textos">Vision</h2>
+                <p class="textos">Facilitar al Perú a sus emprendedores un crecimiento empresarial usando como principal
+                    herramienta la tecnología.</p>
             </div>
         </div>
     </div>
 
-    <div class="pg" id="pg4"></div>
+    <div class="pg  m-0" id="pg4">
+
+        <h2 id="titulo4">¿Tienes una idea que quieras hacer realidad?</h2>
+
+        <div class="row">
+
+            <div class="col-6" id="contact">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="inputs form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="inputs form-control" placeholder="Correo">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="inputs form-control" placeholder="Telefono">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="inputs form-control" placeholder="Cuentanos tu idea"></textarea>
+                    </div>
+                </form>
+                <div id="submitcont">
+                    <button id="enviar" type="submit">Enviar <i class="material-icons"
+                            style="font-size: 32px;">keyboard_arrow_right</i> </button>
+                </div>
+            </div>
+            <div class="col-6">
+              
+                <div id="integrantes" class="row">
+                    <div class="col-4 integrante">
+                        <h5 class="h5">Patrick Lostaunau</h5>
+                        <small>CEO</small>
+                        <div  class="redes row">
+                            <div class="col-4">
+                                <i class="fa fa-facebook-f"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fa fa-instagram"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-4 integrante">
+                        <h5 class="h5">Miguel Rosales</h5>
+                        <small>CMO</small>
+                        <div style="margin-top: 5vh;" class=" redes row">
+                            <div class="col-4">
+                                <i class="fa fa-facebook-f"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fa fa-instagram"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-4 integrante">
+                        <h5 class="h5">Fernando Chaufa</h5>
+                        <small>CTO</small>
+                        <div style="margin-top: 5vh;" class=" redes row">
+                            <div class="col-4">
+                                <i class="fa fa-facebook-f"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fa fa-instagram"></i>
+                            </div>
+                            <div class="col-4">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                  
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
 
 
