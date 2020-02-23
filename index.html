@@ -103,7 +103,7 @@
         <div class="col-6 container">
 
             <p class="textos" id="descripcion">
-                BOXELL es una empresa dedicada al crecimiento y transformación digital. Si tienes una idea de negocio y no sabes por donde empezar, estas en el sitio correcto
+                BOXELL es una empresa dedicada al crecimiento y transformación digital. Si tienes una idea de negocio y no sabes por donde empezar, estas en el sitio correcto.
             </p>
         </div>
         <div class="col-6 " style="padding: 25vh 10% 0px 3%; color: white;">
@@ -269,8 +269,14 @@
                 emailjs.send('gmail', 'js', data, 'user_XOAS4lNptYIHuFq8kkwgk')
                     .then(function (response) {
                         console.log('SUCCESS!', response.status, response.text);
+                        alert('Gracias por contactarnos, te responderemos lo ates posible ;)')
+                        nombre.value = '';
+                        correo.value='';
+                        msg.value = '';
+                        phone.value='';
                     }, function (error) {
                         console.log('FAILED...', error);
+                        alert('Ocurrio un error :(, intentalo de nuevo');
                     });
 
             });
