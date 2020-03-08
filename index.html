@@ -55,24 +55,46 @@
         -->
 
 
+    <!-- BARRA LATERAL DE NAVEGACION -------
 
-    <div id="pagescontainer">
-        <a href="#pg1">
-            <div class="pages"></div>
-        </a>
-        <a href="#pg2">
-            <div class="pages"></div>
-        </a>
-        <a href="#pg3">
-            <div class="pages"></div>
-        </a>
+        <div id="pagescontainer">
+            <a href="#pg1">
+                <div class="pages"></div>
+            </a>
+            <a href="#pg2">
+                <div class="pages"></div>
+            </a>
+            <a href="#pg3">
+                <div class="pages"></div>
+            </a>
         <a href="#pg4">
             <div class="pages"></div>
         </a>
+        </div>
+    -->
+
+    <div id="upid" class=" up">
+        <img id="img-up" src="src/img/icons/cheveron-up.png" alt="Up">
+    </div>
+
+    <div class="pg" id="cload">
+        <div id="loading">
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+            <div class="objload"></div>
+        </div>
     </div>
 
     <div class="pg" id="pg1">
-
         <!--navbar-->
         <nav style="margin: 0px 1.5%;" class="navbar navbar-dark ">
             <span class="navbar-brand titulo ">BO<span class="verde">X</span>ELL</span>
@@ -155,7 +177,7 @@
             </div>
         </div>
         <p id="footpg2" style="text-align: center; font-weight: 500;">No se preocupe por elegir uno, converse con <a
-                href="#pg3" style="color:  #198484;">nosotros</a> y ayudaremos hacia su transformación digital</p>
+                href="#pg4" style="color:  #198484;">nosotros</a> y ayudaremos hacia su transformación digital</p>
     </div>
 
     <div class="pg row m-0" id="pg3">
@@ -169,7 +191,8 @@
         <div id="cmisionvision" class="col-lg-6 col-md-12">
             <div id="mision">
                 <h2 class="subverde textos">Mision</h2>
-                <p class="textos">Brindar servicios de consultoría estrategica y soluciones tecnologicas de alto impacto que generen valor y aporten al crecimiento y desarrollo empresarial </p>
+                <p class="textos">Brindar servicios de consultoría estrategica y soluciones tecnologicas de alto impacto
+                    que generen valor y aporten al crecimiento y desarrollo empresarial </p>
             </div>
             <div id="vision">
                 <h2 class="subverde textos">Vision</h2>
@@ -320,7 +343,26 @@
     <script src="src/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
+
+        window.addEventListener('load', () => {
+            const preloader = document.querySelector('#cload');
+            preloader.classList.add("load-finish");
+        })
+
         $(document).ready(function () {
+
+            document.getElementById("upid").onclick = function () {
+                $(window).scrollTop(0);
+            }
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $(".up").addClass("up-act");
+                } else {
+                    $(".up").removeClass("up-act");
+                }
+            });
+
 
             document.getElementById('formu').addEventListener('submit', (e) => {
                 e.preventDefault();
@@ -336,12 +378,8 @@
                 }
                 emailjs.send('gmail', 'js', data, 'user_XOAS4lNptYIHuFq8kkwgk')
                     .then(function (response) {
+                        location.href = "gracias.html";
                         console.log('SUCCESS!', response.status, response.text);
-                        alert('Gracias por contactarnos, te responderemos lo antes posible ;)')
-                        nombre.value = '';
-                        correo.value = '';
-                        msg.value = '';
-                        phone.value = '';
                     }, function (error) {
                         console.log('FAILED...', error);
                         alert('Ocurrió un error :(  intentalo de nuevo');

@@ -15,6 +15,9 @@ body, * {
     --color-dark-ligth: #8E8E8E;
 }
 
+
+
+
 .pg {
     width: 100%;
     height: 100vh;
@@ -42,6 +45,151 @@ body, * {
 .pagesact {
     background-color: var(--primary-color);
 }
+
+/**************LOADER***************/
+#cload
+{
+    background-color: #222222;
+    position: fixed;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+.load-finish
+{
+    opacity: 0;
+    pointer-events: none;
+}
+#loading
+{
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    top:50%;
+    align-items: center;
+}
+.objload
+{
+    height: 40px;
+    width: 5px;
+    background: var(--primary-color);
+    margin: 0 3px;
+    border-radius: 15px;
+    animation: loading 0.8s infinite;
+}
+.objload:nth-child(2)
+{
+    animation-delay: 0.2s;
+}
+.objload:nth-child(3)
+{
+    animation-delay: 0.3s;
+}
+.objload:nth-child(4)
+{
+    animation-delay: 0.4s;
+}
+.objload:nth-child(5)
+{
+    animation-delay: 0.5s;
+}
+.objload:nth-child(6)
+{
+    animation-delay: 0.6s;
+}
+.objload:nth-child(7)
+{
+    animation-delay: 0.7s;
+}
+.objload:nth-child(8)
+{
+    animation-delay: 0.8s;
+}
+.objload:nth-child(9)
+{
+    animation-delay: 0.9s;
+}
+.objload:nth-child(10)
+{
+    animation-delay: 1s;
+}
+.objload:nth-child(11)
+{
+    animation-delay: 1.1s;
+}
+.objload:nth-child(12)
+{
+    animation-delay: 1.2s;
+}
+.objload:nth-child(13)
+{
+    animation-delay: 1.3s;
+}
+
+
+@keyframes loading{
+    0%{
+        height: 0;
+    }
+    50%{
+        height: 40px;
+    }
+    100%
+    {
+        height: 0;
+    }
+}
+
+
+/*****************BOTON UP*******************/
+.up
+{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    opacity: 0;
+    cursor: pointer;
+    background-color: #115c5c3f;
+    box-shadow:  -1px 1px 10px inset rgba(12, 108, 121, 0.322) ,-15px -15px 60px rgba(32, 163, 163, 0.176) inset ;
+ 
+
+    /*
+    background-color:  rgba(255, 255, 255, 0.089);
+    box-shadow:  -1px 1px 10px inset rgba(255, 255, 255, 0.089) ,-15px -15px 60px rgba(255, 255, 255, 0.199) inset ;
+  */
+}
+.up-act
+{
+    opacity: 1;
+}
+.up:hover{
+
+    box-shadow:  -1px 1px 10px inset rgba(25, 151, 160, 0.575) ,-15px -15px 60px #0d3f3faf inset ;
+ 
+/*
+    box-shadow:  1px 1px 10px inset rgba(255, 255, 255, 0.233) ,-1px -1px 20px rgba(255, 255, 255, 0.075) inset ;
+*/
+
+}
+#img-up
+{
+    margin: 0px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 /**************************PAG1**************************/
 
@@ -281,6 +429,46 @@ body, * {
 }
 
 
+/****************PAGINA DE GRACIAS***********************/
+#pggracias{
+    background-color: #2A2A2A;
+}
+#cgracias{
+    width: 100%;
+    height: auto;
+    padding: 10vh 5%;
+}
+#cgracias p{
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#titulogracias{
+    font-weight: lighter;
+    font-family: 'Quicksand';
+    font-size: 54px;
+    color: white;
+}
+
+#slogan2{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times;
+    padding: 5vh 20%;
+    font-style: italic;
+}
+
+#logogracias{
+    position: absolute;
+    bottom: 10vh;
+    right: 10%;
+    color: white;
+    font-size: 24px;
+    font-weight: lighter;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.404);
+}
+
 
 /***********PARA MOVILES PG1***********/
 
@@ -408,5 +596,23 @@ body, * {
     }
     #iconenviar{
         font-size: 23px;
+    }
+}
+
+/************PARA MOVILES PG GRACIAS*************/
+
+@media (max-width: 600px){
+    #titulogracias
+    {
+        font-size: 30px;
+    }
+    #cgracias p{
+        font-size: 15px;
+    }
+
+    #slogan2{
+        font-size: 18px;
+        font-weight: lighter;
+        padding: 10vh 10%;
     }
 }
