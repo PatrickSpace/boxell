@@ -543,17 +543,17 @@ body, * {
     
     #descripcion{
         padding:5vh 10% 0px 10%;
-        font-size: 12px;
+        font-size: 14px;
     }
     #cmisionvision{
         padding: 5vh 10% 0px 10%;
-        font-size: 12px;
+        font-size: 14px;
     }
     .subverde{
-        font-size: 17px;
+        font-size: 19px;
     }
 }
-@media (max-width: 300px) {
+@media (max-width: 320px) {
     
     #descripcion{
         padding:5vh 5% 0px 5%;
@@ -624,6 +624,12 @@ body, * {
     }
     #iconenviar{
         font-size: 23px;
+    }
+    .up{
+        width: 30px;
+        height: 30px;
+        bottom: 10px;
+        right: 10px;
     }
 }
 
