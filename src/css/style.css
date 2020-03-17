@@ -378,55 +378,59 @@ body, * {
     overflow-y: hidden;
 }
 
-.integrante {
-    border-radius: 10px;
-    color: white;
-    margin: 30px 2%;
-    /*height: 25vh;*/
-    text-align: center;
+
+
+#iwpp{
+    font-size: 22px;
+    padding-top: 2px;
 }
 
-.integrante i {
-    font-size: 20px;
-    color: white;
-}
 
-#img {
-    margin: 10px;
-    width: 80%;
-    height: 80%;
-    background-color: white;
-    border-radius: 50%;
-}
-
-.integrante img {
-    padding-left: 5%;
-    height: 100%;
-    width: 100%;
+#contactonumero{
     height: auto;
-    border-radius: 50%;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.849);
-    margin: auto;
 }
 
-.integrante h5 {
-    font-weight: 400;
-    font-family: 'Roboto';
-    margin: 0px;
-    padding-top: 10px;
-    overflow-y: hidden;
-    color: var(--primary-color);
+#redessociales{
+    color: white;
+    overflow-x: inherit;
 }
-
-.redes {
-    margin-top: 5vh;
-    border-bottom: 1px solid white;
-    border-radius: 8px;
+ 
+#redessociales h4{
+    overflow-x: unset;
 }
 
 #iconenviar{
     font-size: 32px;
 }
+.icon{
+    font-size: 28px;
+    margin-top: 10px;
+    margin: auto;
+}
+.icon{
+    text-decoration: none;
+    color: white;
+    font-size: 32px ;
+    margin: 10px 10px;
+    transition: 0.5s;
+}
+#yt:hover{
+    color: red;
+ 
+    
+}
+#fb:hover{
+    color: rgb(15, 84, 187);
+
+}
+#linkedin:hover{
+    color: rgb(20, 131, 206);
+   
+}
+#ig:hover{
+    background-image: linear-gradient( to top right, rgb(218, 149, 21),rgb(77, 33, 199));
+}
+
 
 
 /****************PAGINA DE GRACIAS***********************/
@@ -578,6 +582,12 @@ body, * {
         margin: 0px;
         padding:0px;
     }
+    #contactonumero{
+        padding-left: 20px;
+    }
+    #redessociales{
+        padding-left: 20px;
+    }
 }
 @media (max-width: 600px) {
     #titulo4{
@@ -585,6 +595,24 @@ body, * {
     }
     #iconenviar{
         font-size: 32px;
+    }
+    #contactonumero h5{
+        font-size: 16px;
+    }
+    #contactonumero h6{
+        font-size: 14px;
+    }
+    #iwpp{
+        font-size: 18px;
+    }
+    #btnwpp{
+        padding: 3px 6px
+    }
+    #redessociales h4{
+        font-size: 18px;
+    }
+    .icon{
+        font-size: 24px;
     }
 }
 @media (max-width: 320px) {
