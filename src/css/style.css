@@ -193,7 +193,7 @@ body, * {
 
 /**************************PAG1**************************/
 
-#pg1 {
+#inicio {
     background-color: var(--color-dark);
     background-image: url(../img/bg1.png);
     background-size: cover;
@@ -280,7 +280,7 @@ body, * {
 
 /**************************PAG3**************************/
 
-#pg3 {
+#nosotros {
     background-image: url(../img/nosotros.jpg);
     background-position: center;
     background-size: cover;
@@ -326,7 +326,7 @@ body, * {
 
 /**************************PAG4**************************/
 
-#pg4 {
+#contacto {
     background-color: var(--color-dark);
 }
 
@@ -512,7 +512,7 @@ body, * {
     .card-img-top {
         height: 20vh;
     }
-    #pg2 {
+    #servicioss {
         min-height: 100%;
         height: auto;
     }
@@ -571,7 +571,7 @@ body, * {
 /***********PARA MOVILES PG4***********/
 
 @media (max-width: 960px) {
-    #pg4{
+    #contacto{
         height: auto;
         min-height: 100%;
     }
