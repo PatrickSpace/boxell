@@ -308,19 +308,14 @@ body, * {
     font-size: 18px;
 }
 
-#mision {
+.valores{
     width: 80%;
-    height: 30vh;
+    height: 25vh;
     margin: auto;
 }
 
-#vision {
-    width: 80%;
-    height: 30vh;
-    margin: auto;
-}
-#cmisionvision{
-    padding: 25vh 10% 0px 3%;
+#cvalores{
+    padding: 20vh 10% 0px 3%;
      color: white;
 }
 
@@ -428,7 +423,7 @@ body, * {
    
 }
 #ig:hover{
-    background-image: linear-gradient( to top right, rgb(218, 149, 21),rgb(77, 33, 199));
+    background-image: linear-gradient( to top right, rgb(218, 149, 21),rgb(228, 23, 23),rgb(77, 33, 199));
 }
 
 
